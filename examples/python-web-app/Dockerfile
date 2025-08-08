@@ -8,8 +8,7 @@ COPY devops /app
 RUN apt-get update && \
     apt-get install -y python3-venv && \
     python3 -m venv venv && \
-    ./venv/bin/pip install --upgrade
-pip && \
+    ./venv/bin/pip install && \
     ./venv/bin/pip install -r requirements.txt && \
     cd devops
 
